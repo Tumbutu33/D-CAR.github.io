@@ -1,0 +1,395 @@
+@media (prefers-reduced-motion) {
+    /* styles to apply if a user's device settings are set to reduced motion */
+  }
+
+  @media only screen and (min-width: 700px){
+    #carrusel1 {
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      width: 100%;
+      height: 75%;
+      transition: 0.5s;
+      margin: 0 auto;
+      padding: 0;
+      font-weight: bold; /* Hacer el texto más grueso */
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* Agregar sombra para simular un borde */
+    }
+  }
+
+  body {
+    background-color: rgb(100, 100, 199) !important;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+
+  h2 {
+    text-align: left; /* Alinea el texto a la izquierda */
+    margin-left: 5%; /* Añade espacio desde el borde izquierdo */
+    color: beige;
+    font-weight: bold; /* Hacer el texto más grueso */
+    text-shadow: 0.1% 0.1% 0.2% rgba(0, 0, 0, 0.8); /* Agregar sombra para simular un borde */
+    font-family: Arial, Helvetica, sans-serif
+  }
+
+  /*MODAL*/
+
+  .modal-text {
+    font-family: inherit;
+    text-align: left;
+    overflow-x: hidden;
+}
+
+.modal-body {
+    padding: 10%;
+}
+
+.modal-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#confirmRead {
+    margin-right: 2%;
+}
+
+  /*NAVBAR*/
+
+  .navbar-brand {
+    font-family: "Permanent Marker", cursive;
+  }
+
+  /* Modificar el color de fondo del navbar */
+#navbar1 .container-fluid {
+  background-color: #fafafa; /* Cambia a cualquier color que desees */
+}
+
+/* Modificar el color de la letra del navbar */
+#navbar1 .navbar-nav .nav-link {
+  color: #000000; /* Cambia a cualquier color que desees */
+}
+
+ 
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+
+  .carousel { /*del primer carrusel*/
+    width: 100%;
+  }
+
+  .carousel-item img { /*del primer carrusel*/
+    height: 700px; /* Ajusta esto según lo que necesites */
+    object-fit: cover; /* Asegura que las imágenes cubran el espacio sin distorsionarse */
+  }
+
+  .scroll-wrapper {
+    display: flex;
+    flex-direction: column; /* Asegura que los elementos estén en columna */
+    align-items: center; /* Centra todo */
+    width: 100%;
+}
+
+.scroll-container {
+  display: flex; /* Utiliza Flexbox para el scroll horizontal */
+  overflow: hidden; /* Quitamos el scroll */
+  scroll-behavior: smooth;
+  padding: 5%;
+  gap: 40px; /* Espacio entre las imágenes */
+}
+
+.image-item {
+  display: flex;
+  flex-direction: column; /* Hace que la imagen y el texto estén en columna */
+  align-items: center; /* Centra la imagen y el texto */
+  flex-shrink: 0; /* Evita que las imágenes se encojan */
+  scroll-snap-align: center; /* Alinea las imágenes al centro cuando se hacen scroll */ 
+  text-decoration: none;
+}
+
+.image-text {
+  margin-top: 3%; /* Espacio entre la imagen y el texto */
+  transition: color 0.3s ease;
+  color: beige;
+  font-family: Arial, Helvetica, sans-serif;
+  
+}
+
+.image-item img {
+  width: 200px; /* Ajusta el tamaño de las imágenes */
+  height: 85%;
+  border-radius: 10px; /* Agrega bordes redondeados (opcional) */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra opcional para darle profundidad */
+  transition: transform 0.3s ease; /* Animación al hacer hover */
+}
+
+.image-item img:hover {
+  transform: scale(1.1); /* Efecto de zoom cuando pasas el ratón por encima */
+}
+
+
+/*CARTAS*/
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20%;
+  margin-bottom: 5%;
+}
+.custom-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2%; /* Espaciado entre cartas */
+}
+.big-card {
+  flex: 1;
+  max-width: 38%; /* Ajusta el tamaño de la carta grande */
+}
+.small-cards {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2%;
+}
+.small-cards .card {
+  width: 100%;
+  height: fit-content;
+}
+.card-img-top {
+  object-fit: cover; /* Asegura que las imágenes cubran el espacio sin distorsionarse */
+}
+.grande {
+  color: rgb(255, 255, 255);
+  padding-top: 20%;
+  -webkit-text-stroke: 0.07px black; /* Contorno del texto */
+}
+.grande-texto {
+  color: rgb(255, 255, 255);
+  text-align: center;
+  -webkit-text-stroke: 0.07px black; /* Contorno del texto */
+  display: flex;
+}
+.pequeño {
+  color: beige;
+  height: flex;
+  width: flex;
+    -webkit-text-stroke: 0.09px black; /* Contorno del texto */
+}
+.pequeño-texto {
+  color: beige;
+  height: flex;
+  width: flex;
+    -webkit-text-stroke: 0.09px black; /* Contorno del texto */
+    display: flex;
+}
+
+/*CARTAS2*/
+
+.sharp-cards-container {
+  padding: 4%; /* Agrega espacio interno */
+  margin: 0.01% auto; /* Centra el contenedor y da espacio alrededor */
+  max-width: 90%; /* Evita que ocupe todo el ancho de la pantalla */
+}
+
+
+.sharp-cards .card {
+  border-radius: 0.03%; /* Hace los bordes más puntiagudos */
+  border: 1px solid #333; /* Agrega un borde más visible */
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1); /* Le da un efecto sutil de sombra */
+}
+
+.sharp-cards .card-img-top {
+  border-top-left-radius: 2%;
+  border-top-right-radius: 2%;
+}
+
+.sharp-cards .card-footer {
+  border-bottom-left-radius: 2%;
+  border-bottom-right-radius: 2%;
+}
+
+/*ICONOS DE REDES*/
+
+.redes {
+  text-decoration: none; /* Quita el subrayado */
+  color: inherit; /* Hereda el color del elemento padre */
+}
+
+/*FOOTER*/
+
+.footer {
+  margin-top: 5%; /* Separa el footer de las imágenes */
+  background-color: rgb(236, 236, 236); /* Color de fondo */
+  padding: 2%;
+  text-align: center; /* Centra el contenido */
+  color: black; /* Color del texto */
+  text-decoration: none;
+}
+
+.image-footer {
+  width: 10%;
+  height: auto;
+  margin: 0 center; /* Centrar la imagen */
+  flex-direction: column; /* Hace que la imagen y el texto estén en columna */
+  align-items: center; /* Centra la imagen y el texto */
+  flex-shrink: 0; /* Evita que las imágenes se encojan */
+  margin: 0;
+  cursor: pointer;
+}
+
+.text-footer {
+  display: block; /* Para que el texto esté en una nueva línea */
+  text-decoration: none;
+  font-family: "Permanent Marker", cursive;
+  font-weight: 400;
+  font-style: normal;
+  color: black;
+  margin-top: 1%; /* Espacio entre la imagen y el texto */
+}
+  
+#icono-telefono {
+  color: black;
+  border-radius: 30%;
+}
+
+.material-icons {
+  font-size: 24px; /* Tamaño del icono */
+  color: #ff5733; /* Cambia el color */
+  vertical-align: middle; /* Alinea con el texto */
+  margin-right: 0.5%; /* Espaciado a la derecha */
+
+}
+
+.iconosFooter i, .iconos {
+  color: black !important;
+}
+
+.link {
+  text-decoration: none;
+  color: black;
+}
+
+.iconos {
+  font-size: 20px;
+  padding-left: 2%;
+  padding-right: 2%;
+}
+
+/*----------------------------------------------------------*/
+
+  
+
+#modeToggle {
+  top: 10px;
+  right: 10px;
+  padding: 10px 20px;
+  background-color: #26282b;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  z-index: 9999;
+}
+
+body.dark-mode #modeToggle {
+  background-color: #ccd7e4;
+  color: #000000;
+}
+
+body.dark-mode {
+  background-color: #003369 !important;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body.dark-mode .navbar-brand {
+  font-family: "Permanent Marker", cursive;
+  color: beige;
+}
+
+/* Modificar el color de fondo del navbar */
+body.dark-mode #navbar1 .container-fluid {
+  background-color: #26282b; /* Cambia a cualquier color que desees */
+}
+
+/* Modificar el color de la letra del navbar */
+body.dark-mode #navbar1 .navbar-nav .nav-link {
+  color:white; /* Cambia a cualquier color que desees */
+}
+
+.image-text.dark-mode {
+margin-top: 3%; /* Espacio entre la imagen y el texto */
+transition: color 0.3s ease;
+color: black;
+font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.image-item img.dark-mode {
+width: 200px; /* Ajusta el tamaño de las imágenes */
+height: 85%;
+border-radius: 10px; /* Agrega bordes redondeados (opcional) */
+box-shadow: 0 4px 6px rgba(255, 255, 255, 0.1); /* Sombra opcional para darle profundidad */
+transition: transform 0.3s ease; /* Animación al hacer hover */
+}
+
+.image-item img:hover.dark-mode {
+transform: scale(1.1); /* Efecto de zoom cuando pasas el ratón por encima */
+}
+
+
+
+/*CARTAS2*/
+
+
+.sharp-cards .card.dark-mode {
+border-radius: 0.03%; /* Hace los bordes más puntiagudos */
+border: 1px solid #afafaf; /* Agrega un borde más visible */
+box-shadow: 3px 3px 10px rgba(255, 255, 255, 0.1); /* Le da un efecto sutil de sombra */
+}
+
+
+
+/*FOOTER*/
+
+body.dark-mode .footer {
+margin-top: 5%; /* Separa el footer de las imágenes */
+background-color: #26282b; /* Color de fondo */
+padding: 2%;
+text-align: center; /* Centra el contenido */
+color: beige; /* Color del texto */
+text-decoration: none;
+}
+
+body.dark-mode .text-footer {
+display: block; /* Para que el texto esté en una nueva línea */
+text-decoration: none;
+font-family: "Permanent Marker", cursive;
+font-weight: 400;
+font-style: normal;
+color: beige;
+margin-top: 1%; /* Espacio entre la imagen y el texto */
+}
+
+body.dark-mode #icono-telefono {
+color: beige;
+border-radius: 30%;
+}
+
+body.dark-mode .material-icons {
+font-size: 24px; /* Tamaño del icono */
+color: #1f62c5; /* Cambia el color */
+vertical-align: middle; /* Alinea con el texto */
+margin-right: 0.5%; /* Espaciado a la derecha */
+
+}
+
+body.dark-mode .link {
+text-decoration: none;
+color: beige;
+}

@@ -1,0 +1,242 @@
+body {
+    background-color: rgb(100, 100, 199) !important;
+  }
+  
+  .navbar-brand {
+    font-family: "Permanent Marker", cursive;
+  }
+
+  h2 {
+    text-align: left; /* Alinea el texto a la izquierda */
+    margin-left: 5%; /* Añade espacio desde el borde izquierdo */
+    color: beige;
+    font-weight: bold; /* Hacer el texto más grueso */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);; /* Agregar sombra para simular un borde */
+    font-family: Arial, Helvetica, sans-serif
+  }
+
+
+  .cartas-noticias {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 2% 0;
+}
+
+.card-container {
+    width: 80%;
+    max-width: 1200px; /* Evita que el contenedor se vuelva demasiado ancho en pantallas grandes */
+    border: 1px solid #ddd;
+    padding: 2%;
+    border-radius: 10px;
+    margin: 2% auto; /* Centra el contenedor horizontalmente */
+    display: flex;
+    flex-direction: column; /* Mantiene las filas en columna */
+    align-items: center; /* Centra las filas dentro del contenedor */
+    background-color: white; /* Asegura un fondo visible */
+}
+
+/* Ajusta el diseño de las filas */
+.card-row {
+    display: flex;
+    flex-wrap: wrap; /* Permite que las cartas se ajusten en filas si no caben */
+    gap: 2%;
+    justify-content: center;
+    width: 100%;
+}
+
+/* Ajusta las cartas para que no se desborden */
+.card {
+    width: 18rem; /* Tamaño fijo */
+    max-width: 100%; /* Evita que las cartas crezcan más allá de su contenedor */
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Asegura que las imágenes sean responsivas dentro de las cartas */
+.card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* Cuando la pantalla es más pequeña, ajusta las cartas */
+@media (max-width: 768px) {
+    .card-container {
+        width: 90%; /* Reduce el ancho del contenedor */
+    }
+
+    .card-row {
+        flex-direction: column; /* Las cartas se colocan en una sola columna */
+        align-items: center;
+    }
+
+    .card {
+        width: 90%; /* Las cartas ocupan más espacio en pantallas pequeñas */
+    }
+}
+
+  .footer {
+    margin-top: 50px; /* Separa el footer de las imágenes */
+    background-color: rgb(236, 236, 236); /* Color de fondo */
+    padding: 20px;
+    text-align: center; /* Centra el contenido */
+    color: black; /* Color del texto */
+    text-decoration: none;
+    font-weight: bold; /* Hacer el texto más grueso */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* Agregar sombra para simular un borde */
+  }
+  
+  .image-footer {
+    width: 100px;
+    height: auto;
+    margin: 0 center; /* Centrar la imagen */
+    flex-direction: column; /* Hace que la imagen y el texto estén en columna */
+    align-items: center; /* Centra la imagen y el texto */
+    flex-shrink: 0; /* Evita que las imágenes se encojan */
+    margin: 0;
+    cursor: pointer;
+  }
+  
+  .text-footer {
+    display: block; /* Para que el texto esté en una nueva línea */
+    text-decoration: none;
+    font-family: "Permanent Marker", cursive;
+    font-weight: 400;
+    font-style: normal;
+    color: black;
+    margin-top: 10px; /* Espacio entre la imagen y el texto */
+  }
+    
+  #icono-telefono {
+    color: black;
+    border-radius: 30%;
+  }
+  
+  .material-icons {
+    font-size: 24px; /* Tamaño del icono */
+    color: #ff5733; /* Cambia el color */
+    vertical-align: middle; /* Alinea con el texto */
+    margin-right: 5px; /* Espaciado a la derecha */
+  
+  }
+
+  .iconosFooter i, .iconos {
+    color: black !important;
+}
+
+  
+  .link {
+    text-decoration: none;
+    color: black;
+  }
+  
+  .iconos {
+    font-size: 20px;
+    padding-left: 2%;
+    padding-right: 2%;
+  }
+
+  /*-------------------------------------------------------*/
+
+  #modeToggle {
+    top: 10px;
+    right: 10px;
+    padding: 10px 20px;
+    background-color: #26282b;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 9999;
+  }
+
+  body.dark-mode #modeToggle {
+    background-color: #ccd7e4;
+    color: #000000;
+  }
+  
+  body.dark-mode {
+    background-color: #003369 !important;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+
+  body.dark-mode .navbar-brand {
+    font-family: "Permanent Marker", cursive;
+    color: beige;
+  }
+  
+  /* Modificar el color de fondo del navbar */
+  body.dark-mode #navbar1 .container-fluid {
+    background-color: #26282b; /* Cambia a cualquier color que desees */
+  }
+  
+  /* Modificar el color de la letra del navbar */
+  body.dark-mode #navbar1 .navbar-nav .nav-link {
+    color:white; /* Cambia a cualquier color que desees */
+  }
+
+  /*CARTAS*/
+  .dark-mode .card-container {
+    background-color: #1a1a1a; /* Fondo oscuro */
+    color: white; /* Texto blanco */
+    border: 1px solid #444; /* Borde más oscuro */
+}
+
+.dark-mode .card {
+    background-color: #2c2c2c; /* Fondo oscuro para cada carta */
+    color: white; /* Texto en modo oscuro */
+}
+
+.dark-mode .card a.btn {
+    background-color: #007bff; /* Botón con color resaltado */
+    color: white;
+    border: none;
+}
+
+.dark-mode .card a.btn:hover {
+    background-color: #0056b3; /* Color más oscuro en hover */
+}
+
+.dark-mode .card img {
+    opacity: 0.9; /* Leve opacidad para mejorar el contraste */
+}
+
+  /*FOOTER*/
+
+body.dark-mode .footer {
+  margin-top: 5%; /* Separa el footer de las imágenes */
+  background-color: #26282b; /* Color de fondo */
+  padding: 2%;
+  text-align: center; /* Centra el contenido */
+  color: beige; /* Color del texto */
+  text-decoration: none;
+  }
+  
+  body.dark-mode .text-footer {
+  display: block; /* Para que el texto esté en una nueva línea */
+  text-decoration: none;
+  font-family: "Permanent Marker", cursive;
+  font-weight: 400;
+  font-style: normal;
+  color: beige;
+  margin-top: 1%; /* Espacio entre la imagen y el texto */
+  }
+  
+  body.dark-mode #icono-telefono {
+  color: beige;
+  border-radius: 30%;
+  }
+  
+  body.dark-mode .material-icons {
+  font-size: 24px; /* Tamaño del icono */
+  color: #1f62c5; /* Cambia el color */
+  vertical-align: middle; /* Alinea con el texto */
+  margin-right: 0.5%; /* Espaciado a la derecha */
+  
+  }
+  
+  body.dark-mode .link {
+  text-decoration: none;
+  color: beige;
+  }

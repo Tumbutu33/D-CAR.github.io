@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Programación Web">
+    <meta name="keywords" content="Clothing, Fahsion, Oversize, Hypebeast, Shop, Ropa, Sneakers, Tenis, Hoodie">
+    <meta name="author" content="Diego Caraballo">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" crossorigin="anonymous" href="https://gc.kis.v2.scr.kaspersky-labs.com/E3E8934C-235A-4B0E-825A-35A08381A191/abn/main.css?attr=aHR0cHM6Ly92aXJ0dWFsLnVucGh1LmVkdS5kby9wbHVnaW5maWxlLnBocC80NzEwNi9tb2RfcmVzb3VyY2UvY29udGVudC8xLzExLWNhcnJ1c2VsZXMuaHRtbA">
+    <link rel="stylesheet" href="HypeBeast4.css">
+    <link rel="icon" type="image/png" href="../imagenes/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="../imagenes/favicon.svg" />
+    <link rel="shortcut icon" href="../imagenes/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="../imagenes/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="HypeBeast" />
+    <link rel="manifest" href="../imagenes/site.webmanifest" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=mail" />
+
+    <title>HypeBeast Clothing</title>
+</head>
+<body>
+
+ <!--MODAL-->
+ <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="staticBackdropLabel">Políticas y Privacidad</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="modal-text">
+          <p><strong>Última actualización:</strong> 03/11/2025</p>
+          <p><strong>Bienvenido a HyperBeast.Clothing.</strong> Tu privacidad es importante para nosotros. En este documento explicamos cómo recopilamos, usamos y protegemos tu información personal cuando utilizas nuestro sitio web.</p>
+          
+          <h3>📌 1. Información que recopilamos</h3>
+          <ul>
+            <li><strong>Nombre:</strong> Para personalizar tu experiencia en nuestro sitio.</li>
+            <li><strong>Correo electrónico:</strong> Para autenticación y comunicación.</li>
+            <li><strong>Contraseña:</strong> Para acceder de manera segura a tu cuenta.</li>
+          </ul>
+          
+          <h3>📌 2. Uso de la información</h3>
+          <p>Usamos la información para:</p>
+          <ul>
+            <li>Crear y gestionar tu cuenta.</li>
+            <li>Enviar notificaciones importantes.</li>
+            <li>Brindar soporte al cliente.</li>
+          </ul>
+
+          <h3>📌 3. Protección de tu información</h3>
+          <ul>
+            <li>Cifrado de contraseñas.</li>
+            <li>Protocolos de seguridad en servidores.</li>
+            <li>Acceso restringido a personal autorizado.</li>
+          </ul>
+
+          <h3>📌 4. Derechos del usuario</h3>
+          <p>Tienes derecho a:</p>
+          <ul>
+            <li>Acceder a tu información.</li>
+            <li>Solicitar eliminación de cuenta.</li>
+            <li>Modificar nombre y correo.</li>
+          </ul>
+
+          <h3>📌 5. Contacto</h3>
+          <p>📩 <strong>Correo:</strong> soporte@hyperbeast.clothing</p>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <div class="form-check">
+          <input type="checkbox" class="form-check-input" id="confirmRead">
+          <label class="form-check-label" for="confirmRead">He leído y acepto las políticas de privacidad.</label>
+        </div>
+        <button type="button" class="btn btn-primary" id="acceptBtn" disabled>Aceptar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!--NAVBAR-->
+<section id="navbar1" class="navegador-buscador">
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="../index.html">
+        <img src="../imagenes/favicon.svg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+        Hypebeast
+      </a>
+      <!--<a class="navbar-brand" href="#">Hypebeast</a>-->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" href="#" data-bs-toggle="modal" data-bs-target="#registerModal">
+              Inscríbete
+            </a>
+          </li>
+          <li>
+            <a class="nav-link" href="../Quinta Pagina/HypeBeast5.html" id="Contacto">
+              Contactanos
+            </a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Categorías
+            </a>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="../Segunda Pagina/HypeBeast2.html#section1">Nuevos Estilos</a></li>
+                <li><a class="dropdown-item" href="../Segunda Pagina/HypeBeast2.html#section2">Calzado</a></li>
+                <li><a class="dropdown-item" href="../Segunda Pagina/HypeBeast2.html#section3">Pantalones</a></li>
+                <li><a class="dropdown-item" href="../Segunda Pagina/HypeBeast2.html#section4">Camisetas</a></li>
+                <li><a class="dropdown-item" href="../Segunda Pagina/HypeBeast2.html#section6">Hoodies</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" id="openPolicyModal">Políticas y Privacidad</a>
+          </li>
+          <li class="nav-item">
+            <button id="modeToggle">Modo Oscuro</button>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+ </section> 
+ <br>
+
+<!--MODAL DE CUENTAS-->
+<div class="modal fade" id="registerModal" tabindex="-1" aria-labelledby="registerModalLabel" aria-hidden="true">
+<div class="modal-dialog">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h5 class="modal-title" id="registerModalLabel">Registro de Cuenta</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    </div>
+    <div class="modal-body">
+      <form id="registerForm">
+        <div class="mb-3">
+          <label for="nombre" class="form-label">Nombre</label>
+          <input type="text" class="form-control" id="nombre" required>
+        </div>
+        <div class="mb-3">
+          <label for="apellido" class="form-label">Apellido</label>
+          <input type="text" class="form-control" id="apellido" required>
+        </div>
+        <div class="mb-3">
+          <label for="correo" class="form-label">Correo</label>
+          <input type="email" class="form-control" id="correo" required>
+        </div>
+        <div class="mb-3">
+          <label for="password" class="form-label">Contraseña</label>
+          <input type="password" class="form-control" id="password" required>
+        </div>
+      </form>
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+      <button type="button" class="btn btn-primary" id="confirmRegister">Confirmar</button>
+    </div>
+  </div>
+</div>
+</div>
+<br>
+
+
+<h2>NOTICIAS</h2>
+  <section class="cartas-noticias">
+    <div id="card-noticias" class="card-container">
+    <div class="card-row">
+    <div class="card" style="width: 18rem;">
+      <img src="../imagenes/Nike SB x Air Jordan 4 Navy.avif" class="card-img-top" alt="Nike SB x Air Jordan 4 Navy">
+      <div class="card-body">
+        <h5 class="card-title">Lanzamiento del Nike SB x Air Jordan 4 Navy </h5>
+        <p class="card-text">Imagenes del pronto a lanzarse Nike SB x Air Jordan 4 Navy</p>
+        <a href="https://hypebeast.com/2023/4/nike-sb-air-jordan-4-blue-white-rumor-release-info" class="btn btn-primary">Saber Más</a>
+      </div>
+    </div>
+    <div class="card" style="width: 18rem;">
+      <img src="../imagenes/Supreme.avif" class="card-img-top" alt="Supreme Jacket">
+      <div class="card-body">
+        <h5 class="card-title">Supreme presenta su colección SS25</h5>
+        <p class="card-text">Supreme ha lanzado un avance de su próxima colección Primavera/Verano 2025.</p>
+        <a href="https://hypebeast.com/2025/2/supreme-spring-sumer-2025-collection-teaser-info" class="btn btn-primary">Saber Más</a>
+      </div>
+    </div>
+    <div class="card" style="width: 18rem;">
+      <img src="../imagenes/cro.avif" class="card-img-top" alt="StreeX Crocs">
+      <div class="card-body">
+        <h5 class="card-title">El Zueco de StreetX x Crocs es un robusto homenaje al lado salvaje de Australia</h5>
+        <p class="card-text">Tras su primera colaboración en 2022, el icono australiano de la moda urbana StreetX ha vuelto a unir fuerzas con Crocs para reinventar el Classic Clog .</p>
+        <a href="https://hypebeast.com/2025/3/streetx-crocs-classic-clogs-collaboration-price-stx31774-where-to-buy" class="btn btn-primary">Saber Más</a>
+      </div>
+    </div>
+    </div>
+    <div class="card-row">
+      <div class="card" style="width: 18rem;">
+        <img src="../imagenes/gucci.avif" class="card-img-top" alt="Gucci model">
+        <div class="card-body">
+          <h5 class="card-title">¿Puede Demna ser el héroe de Gucci?</h5>
+          <p class="card-text">El provocador de Balenciaga es el siguiente en la línea para liderar la mina de oro de Kering.</p>
+          <a href="https://hypebeast.com/2025/3/demna-gucci-hero-creative-director-appointment" class="btn btn-primary">Saber Más</a>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img src="../imagenes/NB.avif" class="card-img-top" alt="New Balance Allerdale">
+        <div class="card-body">
+          <h5 class="card-title">New Balance presenta el Allerdale fabricado en el Reino Unido</h5>
+          <p class="card-text">New Balance Made in UK regresa con una nueva creación: las Allerdale.</p>
+          <a href="https://hypebeast.com/2025/3/new-balance-allerdale-made-in-uk-dark-brown-uadwbrn-release-info" class="btn btn-primary">Saber Más</a>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img src="../imagenes/Beam boys.avif" class="card-img-top" alt="Beam Boys Sweatshirt">
+        <div class="card-body">
+          <h5 class="card-title">ARC'TERYX y BEAMS BOY lanzarán nuevas combinaciones de colores exclusivas</h5>
+          <p class="card-text">ARC'TERYX y BEAMS BOY se han unido una vez más para lanzar una exclusiva gama de colores.</p>
+          <a href="https://hypebeast.com/2025/3/arcteryx-and-beams-exclusive-new-colorways" class="btn btn-primary">Saber Más</a>
+        </div>
+      </div>
+      </div>
+    <div class="card-row">
+      <div class="card" style="width: 18rem;">
+        <img src="../imagenes/nike mlb.avif" class="card-img-top" alt="Nike MLB Jersey">
+        <div class="card-body">
+          <h5 class="card-title">Fanatics lanza camisetas ultra raras Nike MLB Sakura Elite de la colaboración con Takashi Murakami</h5>
+          <p class="card-text">Limitado a menos de 40 piezas y con un precio de 2000 USD cada pieza.</p>
+          <a href="https://hypebeast.com/2025/3/fanatics-ultra-rare-nike-mlb-sakura-elite-jerseys-takashi-murakami-collaboration-limited-edition-2000-usd" class="btn btn-primary">Saber Más</a>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img src="../imagenes/hypegolf.avif" class="card-img-top" alt="Hype Golf CLothing">
+        <div class="card-body">
+          <h5 class="card-title">Hypegolf presenta: La mejor ropa y equipamiento para el Campeonato THE PLAYERS</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="https://hypebeast.com/2025/3/players-championship-best-apparel-gear-clubs-limited-edition-hypegolf-drops-2025" class="btn btn-primary">Saber Más</a>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img src="../imagenes/Hamilton ropa.avif" class="card-img-top" alt="INFITY Model">
+        <div class="card-body">
+          <h5 class="card-title">+44 de Lewis Hamilton anuncia una nueva colaboración con Hajime Sorayama</h5>
+          <p class="card-text">Titulada “INFINITY”, la colaboración regresa después de su primera cápsula de 2023.</p>
+          <a href="https://hypebeast.com/2025/3/lewis-hamilton-plus-44-new-hajime-sorayama-collaboration-release-info" class="btn btn-primary">Saber Más</a>
+        </div>
+      </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="footer">
+      <span id="backToTop" class="image-footer back-to-top">
+        <img src="../imagenes/favicon-96x96.png" alt="Oso de HypeBeast">
+    </span>
+      <p class="text-footer">HypeBeast</p>
+      <p><i id="icono-telefono" class="bi bi-telephone-fill"></i>   809-000-0000</p>
+      <a href="../Tercera Pagina/HypeBeast3.html" class="link">
+        <p><i class="bi bi-geo-alt-fill"></i>   Av. John F. Kennedy Km 7 1/2 Apartado Postal 1423, Santo Domingo, República Dominicana.</p>
+      </a>
+      <a href="mailto:soporte@hyperbeast.clothing" class="link">
+        <p> soporte@hyperbeast.clothing</p>
+      </a>
+      <span class="iconosFooter"> 
+        <a href="https://www.facebook.com/" target="_blank" class="redes"><i class="bi bi-facebook iconos"></i></a>
+    </span> 
+    <a href="https://web.whatsapp.com/" target="_blank" class="redes"><i class="bi bi-whatsapp iconos"></i></a>  
+    <a href="https://www.instagram.com/" target="_blank" class="redes"><i class="bi bi-instagram iconos"></i></a> 
+    <a href="https://x.com/" target="_blank" class="redes"><i class="bi bi-twitter-x iconos"></i></a> 
+    <a href="https://www.youtube.com/" target="_blank" class="redes"><i class="bi bi-youtube iconos"></i></a>
+    </span>
+    </div>
+  </section>    
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="HypeBeast4.js"></script>
+</body>
+</html>
